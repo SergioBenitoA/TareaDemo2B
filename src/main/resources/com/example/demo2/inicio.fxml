@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="428.0" prefWidth="687.0" spacing="10" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.InicioController">
+    <AnchorPane prefHeight="680.0" prefWidth="687.0">
+        <children>
+
+            <Label layoutX="266.0" layoutY="21.0" style="-fx-font-size: 18pt;" text="Lista de Tareas" />
+            <Button fx:id="Agregar" layoutX="207.0" layoutY="334.0" text="Agregar" />
+            <Button fx:id="Editar" layoutX="320.0" layoutY="334.0" text="Editar" />
+            <Button fx:id="Eliminar" layoutX="422.0" layoutY="334.0" text="Eliminar" />
+            <TableView layoutX="81.0" layoutY="84.0" prefHeight="200.0" prefWidth="526.0">
+                <columns>
+                    <TableColumn id="columnTitulo" fx:id="Lunes" prefWidth="75.0" text="Titulo" />
+                    <TableColumn id="columnDescripcion" fx:id="Martes" prefWidth="75.0" text="Descripcion" />
+                    <TableColumn id="columnDia" fx:id="Miercoles" prefWidth="75.0" text="Dia" />
+                </columns>
+            </TableView>
+        </children>
+    </AnchorPane>
+
+    <HBox alignment="CENTER" spacing="10" />
+
+</VBox>
